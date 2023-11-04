@@ -1,0 +1,57 @@
+/* Style for the menu container */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center-align items horizontally */
+    max-width: 800px; /* Reduce the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+
+
+/* Style for each menu item */
+.menu .menu-item {
+    flex: 0 0 calc(33.33% - 20px);
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect for menu items */
+.menu .menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the item image */
+.menu .menu-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Style for the item name */
+.menu .menu-item p {
+    font-size: 1.4em;
+    margin: 10px 0;
+    color: #333;
+    font-weight: bold; /* Make the item name bold */
+}
+
+/* Style for the item price */
+.menu .menu-item strong {
+    font-size: 1.6em;
+    color: #e74c3c;
+}
+
+/* Additional style for the division containing the menu items */
+.menu h3 {
+    font-size: 1.8em;
+    margin: 20px 0;
+    text-align: center;
+    color: #555;
+}
